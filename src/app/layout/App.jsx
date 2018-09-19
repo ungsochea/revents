@@ -8,9 +8,7 @@ import PeopleDashboard from '../../features/user/PeopleDashboard/PeopleDashboard
 import UserDetailed from '../../features/user/UserDetailed/UserDetailedPage';
 import SettingDashboard from '../../features/user/Setting/SettingDashboard';
 import HomePage from '../../features/home/HomePage';
-
-
-
+import TestComponent from '../../features/teatarea/TestComponent';
 
 class App extends Component {
   render() {
@@ -26,6 +24,7 @@ class App extends Component {
             <Container className="main">
               <Switch>           
                 <Route path="/events" component={EventDashboard}/>   
+                <Route path="/test" component={TestComponent}/>   
                 <Route path="/event/:id" component={EventDashboard}/>   
                 <Route path="/people" component={PeopleDashboard}/>  
                 <Route path="/profile/:id" component={UserDetailed}/>  
