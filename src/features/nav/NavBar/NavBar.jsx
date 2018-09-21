@@ -41,7 +41,7 @@ class NavBar extends Component {
                   }
                   {authenticated&&
                     <Menu.Item>
-                      <Button floated="right" positive inverted content="Create Event" />
+                      <Button as={NavLink} to={'/createEvent'} floated="right" positive inverted content="Create Event" />
                     </Menu.Item>
                   }
 
